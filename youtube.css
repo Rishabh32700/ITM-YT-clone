@@ -18,7 +18,7 @@ body{
 }
 
 .navbarContainer{
-    border: 10px solid red;
+    /* border: 10px solid red; */
     height: 10%;
     display: flex;
 }
@@ -26,7 +26,7 @@ body{
 .leftNavbarContainer,
 .middleNavbarContainer,
 .rightNavbarContainer{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     height: 100%;
 }
 
@@ -35,9 +35,52 @@ body{
 .rightNavbarContainer{
     width: 20%;
 }
+.leftNavbarContainer{
+    align-items:center;
+    display: flex;
+
+
+    .logo img {
+        padding-left: 20px;
+        height: 40px;
+        border-radius: 10px;
+    }
+}
 
 .middleNavbarContainer{
+    display: flex;
     width: 60%;
+    
+    .search-bar {
+        align-self: center;
+        padding-top: 15;
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 60%;
+        height:100%;
+    }
+    
+    .search-bar input {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        background-color: #282828;
+        color: #fff;
+        outline: none;
+    }
+    
+    .search-bar button {
+        padding: 10px 15px;
+        background-color: #090202;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        cursor: pointer;
+    }
+
 }
 
 .mainContentContainer{
@@ -45,6 +88,46 @@ body{
     height: 90%;
     display: flex;
 
+}
+.rightNavbarContainer{
+    display:flex;
+    align-items: center;
+    gap: 15px; /* Space between items */
+    padding-right: 5px;
+    .createbuttonn {
+        background-color:white; /* YouTube red */
+        color: rgb(14, 13, 13);
+        border: none;
+        border-radius: 10%; 
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        height:40%;
+    }
+    
+    .createbuttonn:hover {
+        transform: scale(1.1);
+    }
+    
+    .notification-bell img {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+
+    .channelprofilepic img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%; 
+        border: 2px solid #ccc; 
+        object-fit: cover; 
+    }
 }
 
 ul{
